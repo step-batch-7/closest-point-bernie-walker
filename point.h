@@ -12,12 +12,14 @@ Location of organism: [69 7],   Closest food target : [55 38]
 Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
-typedef struct 
+typedef struct
 {
   int x;
   int y;
 } Point;
 
-int calculate_steps(int, int);
+int find_distace(int, int);
+
+int calculate_steps(Point *, Point *);
 
 void get_closest_food(Point *food_points, int points_length, Point current_location, Point *closest_food_location);
