@@ -12,14 +12,27 @@ Location of organism: [69 7],   Closest food target : [55 38]
 Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
+
+#define DEFAULT_FOOD_LOCATIONS                        \
+  {                                                   \
+    {18, 76}, {19, 66}, {89, 57}, {9, 71}, { 55, 38 } \
+  }
+
+#define DEFAULT_CURRENT_POINT \
+  {                           \
+    36, 27                    \
+  }
+
+#define DEFAULT_LENGTH 5
+
 typedef struct
 {
   int x;
   int y;
 } Point;
 
-int find_distace(int, int);
+int find_distance(int, int);
 
 int calculate_steps(Point *, Point *);
 
-void get_closest_food(Point *, int, Point, Point *);
+void get_closest_food(Point *, int, Point *, Point *);
