@@ -22,4 +22,4 @@ int find_distace(int, int);
 
 int calculate_steps(Point *, Point *);
 
-void get_closest_food(Point *food_points, int points_length, Point current_location, Point *closest_food_location);
+void get_closest_food(Point *, int, Point, Point *);
