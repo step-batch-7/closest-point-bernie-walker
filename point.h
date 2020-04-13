@@ -33,6 +33,6 @@ typedef struct
 
 int find_distance(int, int);
 
-int calculate_steps(Point *, Point *);
+int calculate_steps(Point, Point);
 
-void get_closest_food(Point *, int, Point *, Point *);
+void get_closest_food(Point *, int, Point, Point *);
