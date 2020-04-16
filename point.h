@@ -21,6 +21,6 @@ typedef struct
 
 double calculate_steps(Point, Point);
 
-void get_closest_food(Point *, int, Point, Point *);
+Point *get_closest_food(Point *, int, Point);
 
 #endif
