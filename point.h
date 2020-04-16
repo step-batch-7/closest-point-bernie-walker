@@ -19,8 +19,12 @@ typedef struct
   int y;
 } Point;
 
+typedef Point *Point_ptr;
+
+Point_ptr get_default_locations(void);
+
 double calculate_steps(Point, Point);
 
-Point *get_closest_food(Point *, int, Point);
+Point_ptr get_closest_food(Point_ptr, int, Point);
 
 #endif
